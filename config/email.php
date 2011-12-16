@@ -5,7 +5,7 @@ return array(
 	 *
 	 * Valid drivers are: native, sendmail, smtp
 	 */
-	'driver' => 'native',
+	'driver' => 'sendmail',
 	
 	/**
 	 * To use secure connections with SMTP, set "port" to 465 instead of 25.
@@ -25,5 +25,7 @@ return array(
 	 * @param   string  sendmail: executable path, with -bs or equivalent attached
 	 * @param   array   smtp: hostname, (username), (password), (port), (encryption)
 	 */
-	'options' => NULL
+	/*'options' => array(
+                'host' => 'localhost',
+                'port' => '25'),*/
 );

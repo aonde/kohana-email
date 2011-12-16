@@ -240,6 +240,7 @@ class Swift_Transport_StreamBuffer
     {
       $timeout = $this->_params['timeout'];
     }
+    
     if (!$this->_stream = fsockopen($host, $this->_params['port'], $errno, $errstr, $timeout))
     {
       throw new Swift_TransportException(
